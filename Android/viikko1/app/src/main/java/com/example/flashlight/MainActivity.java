@@ -44,10 +44,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                     torchOn = !torchOn;
                     cameraManager.setTorchMode(id, torchOn);
                     if (!torchOn) {
-                        System.out.println("Taskulamppu päällä");
+                        System.out.println("Taskulamppu pois");
                         layout.setBackgroundColor(Color.BLACK);
                     } else {
-                        System.out.println("Taskulamppu pois");
+                        System.out.println("Taskulamppu päällä");
                         layout.setBackgroundColor(Color.YELLOW);
 
                     }
